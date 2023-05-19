@@ -61,7 +61,8 @@
 .navbar-link:hover {
   color: #00ff00;
   cursor: pointer;
-  font-size: ;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .active {
