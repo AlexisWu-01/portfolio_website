@@ -25,12 +25,13 @@
   color: #0f0;
   text-decoration: none;
   transition: 0.2s ease-in-out;
-  animation: color-change 2s infinite;
+  animation: color-change 5s infinite;
 }
 
 .navbar-name:hover {
   color: #00ff00;
   cursor: pointer;
+  font-size:1.8rem;
 }
 
 .navbar-menu {
@@ -54,12 +55,13 @@
   font-family: 'Courier New', monospace;
   font-size: 1.1rem;
   font-weight: 500;
-  animation: color-change 2s infinite;
+  /* animation: color-change 5s infinite; */
 }
 
 .navbar-link:hover {
   color: #00ff00;
   cursor: pointer;
+  font-size: ;
 }
 
 .active {
@@ -91,6 +93,6 @@
 
 @keyframes color-change {
   0% { color: #0f0; }
-  50% { color: #00ff00; }
-  100% { color: #0f0; }
+  50% { color: #009100; }
+  100% { color: rgb(0, 63, 0); }
 }
