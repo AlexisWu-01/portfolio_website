@@ -1,0 +1,60 @@
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar-container {
+  height: 80px; /* set height of navbar */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 70%;
+  align-self: center;
+}
+
+
+/* .download-button {
+  right:0;
+  margin-top: 0;
+  padding: 10px 20px;
+  background-color: #f6a625;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height:30px;
+  width:420px;
+} */
+
+.download-button {
+  float: right;
+  top: 80px;
+  /* right: 280px; */
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #f6a625;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  border:#ffa600;
+  /* border-radius: 5px; */
+  cursor: copy;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #ffa600;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+
+
+

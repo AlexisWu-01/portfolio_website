@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resume.css">
+  <title>Xinyi (Alexis) Wu Resume</title>
+</head>
+<body>
+    <header>
+        <h1>Xinyi (Alexis) Wu</h1>
+        <p>Innovative and driven engineering student with a strong foundation in software development, machine learning, and robotics. Passionate about using technology to create meaningful solutions that improve lives and drive business growth. Experienced in collaborating with diverse teams and effectively communicating technical concepts to non-technical stakeholders.</p>
+        <h2>Skills</h2>
+        <ul>
+          <li>Python, Machine Learning (PyTorch, TensorFlow)</li>
+          <li>MATLAB, Swift, Ros2</li>
+          <li>Full stack (MySQL, Python Flask, HTML, CSS, JavaScript)</li>
+          <li>Computer Vision, Ocaml</li>
+          <li>Microsoft Office, Adobe Photoshop, Adobe Illustrator</li>
+          <li>Fusion 360, Final Cut Pro X</li>
+        </ul>
+        <p>wuxinyi2000@gmail.com</p>
+        <p>C: (781)809-1286</p>
+        <p><a href="www.linkedin.com/in/xinyi-alexis-wu/" target="_blank">www.linkedin.com/in/xinyi-alexis-wu/</a></p>
+      </header>
+      
+      
+      <main>
+        <section>
+          <h2 onclick="toggleSection('education')">Education</h2>
+          <div id="education" style="display: none;">
+            <!-- <h2>EDUCATION</h2> -->
+        <div class="entry">
+            <div class="left">
+            <h3>Olin College of Engineering</h3>
+            <p>Bachelor of Science, Engineering: Computing</p>
+            <!-- In the Education section -->
+
+            <p><span class="label">Relevant Courses:</span> Software Design, Data Structure and Algorithm, Robotics with Ros, Principles of Engineering, Database with Web Interfaces, Advanced Algorithms, Computer Architecture, Probabilistic Design Optimization, Cryptocurrency and Blockchain Technology, Quantitative Engineering Analysis</p>
+            </div>
+            <div class="right">
+            <p>Needham, MA</p>
+            <p>September 2018 - Dec 2023</p>
+        </div>
+      </div>
+          </div>
+        </section>
+        <section>
+            <h2 onclick="toggleSection('work_experience')">Work Experience</h2>
+            <div id="work_experience" style="display: none;">
+              <div class="job">
+                <h3>Machine Learning Intern</h3>
+                <h4 class="company-name">Tencent</h4>
+                <div class="job-location-dates">
+                  <p><span class="label">Location:</span> Shenzhen, China</p>
+                  <p><span class="label">Dates:</span> Oct 2020 - Jan 2021</p>    </div>           <ul>
+                  <li>Developed beat detection algorithm for a mini game on a platform with billions of users</li>
+                  <li>Implemented market research for beat detection games and delivered presentation to the whole TME departments</li>
+                  <li>Designed a new algorithm that combined onset and beat detector and used CNN for spectrogram processing</li>
+                  <li>Programmed a python game to test player experience with different actions based on categories from the algorithm</li>
+                </ul>
+              </div>
+              <div class="job">
+                <h3>Machine Learning Intern</h3>
+                <h4 class="company-name">Chinasoft intl.</h4>
+                <div class="job-location-dates">
+                  <p> Xi’an, China</p>
+                  <p> June 2020 - Sept 2020</p>
+                </div> <ul>
+                  <li>Built payment fraud detection model for e-commerce platform with million size database</li>
+                  <li>Implemented data preprocessing and feature engineering with sklearn and pandas</li>
+                  <li>Developed random forest and unsupervised autoencoder neural networks that achieved 90% accuracy and 70% precision</li>
+                  <li>Visualized data and model results using matplotlib and seaborn</li>
+                  <li>Communicated and collaborated with business strategy team to consolidate project needs, scope, and results</li>
+                </ul>
+              </div>
+              <div class="job">
+                <div class="job">
+                    <h3>Software Development Intern</h3>
+                    <h4 class="company-name">DJI Co. Ltd.</h4>
+                    <div class="job-location-dates">
+                      <p><span class="label">Location:</span> Shenzhen, China</p>
+                      <p><span class="label">Dates:</span> June 2018 - August 2018</p>
+                    </div>               <ul>
+                  <li>Developed land robot with a remote control that grabs and builds blocks which was the prototype of RoboMaster S1</li>
+                  <li>Implemented PID-controlled movement, electromagnetically controlled valve, and DBUS remote control on STM32</li>
+                  <li>Setup the whole electrical controlled system including microcontrollers and programming</li>
+                  <li>Tested and evaluated the latest drone models for flight control and computer vision functions</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          
+        <section>
+          <h2 onclick="toggleSection('projects')">Projects</h2>
+          <div id="projects" style="display: none;">
+            <!-- Add projects content here -->
+          </div>
+        </section>
+        <!-- Add any additional sections as needed -->
+      </main>
+      
+<!-- 
+  <main>
+    <section id="education">
+      <h2>EDUCATION</h2>
+      <div class="entry">
+        <div class="left">
+          <h3>Olin College of Engineering</h3>
+          <p>Bachelor of Science, Engineering: Computing</p>
+          <p>Relevant Courses: Software Design, Data Structure and Algorithm, Robotics with Ros, Principles of Engineering, Database with Web Interfaces, Advanced Algorithms, Computer Architecture, Probabilistic Design Optimization, Cryptocurrency and Blockchain Technology, Quantitative Engineering Analysis</p>
+        </div>
+        <div class="right">
+          <p>Needham, MA</p>
+          <p>September 2018 - Dec 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <ul>
+        <li>Technical: Python, Machine Learning (PyTorch, TensorFlow), MATLAB, Swift, Ros2, Full stack (MySQL, Python Flask, HTML, CSS, JavaScript), Computer Vision, Ocaml</li>
+        <li>Other: Microsoft office, Adobe Photoshop, Adobe Illustrator, Fusion 360, Final Cut Pro X</li>
+      </ul>
+    </section>
+
+    <!-- Add the remaining sections of your resume here -->
+
+    <section id="work-experience">
+      <h2>WORK EXPERIENCE</h2>
+      <!-- Add your work experience entries here -->
+    </section>
+
+    <section id="project-experience">
+      <h2>PROJECT EXPERIENCE</h2>
+      <!-- Add your project experience entries here -->
+    </section>
+
+    <section id="volunteer-experience">
+      <h2>VOLUNTEER EXPERIENCE</h2>
+      <!-- Add your volunteer experience entries here -->
+    </section>
+
+    <section id="presentations-publications">
+      <h2>PRESENTATIONS AND PUBLICATIONS</h2>
+      <!-- Add your presentations and publications entries here -->
+    </section> -->
+  </main>
+  <script>
+    function toggleSection(sectionId) {
+      const content = document.getElementById(sectionId);
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+  
+</body>
+</html>
