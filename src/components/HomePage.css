@@ -1,3 +1,9 @@
+body {
+  font-family: 'Courier New', monospace;
+  color: #0f0;
+  background-color: black;
+}
+
 .home-container {
   margin-top: 80px;
   height: 100vh;
@@ -6,43 +12,66 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url('https://source.unsplash.com/random/1920x1080?nature');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home-box {
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
   border-radius: 15px;
+  color: #0f0; /* matrix green */
+  box-shadow: 0px 0px 10px #0f0; /* green glow */
+  max-width: 80%; /* limit the width to avoid overflow */
+}
+
+.typewriter {
+  font-size: 1.6rem;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: pre-wrap; /* change this back to nowrap for the typewriter effect */
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  position: relative;
+  z-index: 2;
+  color: #0f0; /* matrix green */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .home-title {
   font-size: 4rem;
   font-weight: bold;
-  color: #232121;
+  color: #0f0;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
 
-.home-intro {
-  font-size: 1.6rem;
-  color: #000000;
-  max-width: 800px;
-  text-align: center;
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-
-.quote-container {
+.quote-container, .weather-container {
   padding: 1rem;
   border-radius: 10px;
-  margin: 4rem;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
   text-align: center;
+  color: #0f0; /* matrix green */
+  font-family: 'Courier New', monospace; /* monospace font */
+  box-shadow: 0px 0px 10px #0f0; /* green glow */
+  max-width: 80%; /* limit the width to avoid overflow */
+  word-wrap: break-word; /* allow long words to break and go to the next line */
+  z-index: 2;
 }
 
-.quote-text {
-  color: rgba(213, 210, 210, 0.8);
+.quote-text, .weather-text {
+  color: #0f0;
   font-weight: bold;
 }
 
@@ -50,12 +79,8 @@
   position: absolute;
   top: 80px;
   right: 20px;
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
   margin: 20px;
+  z-index: 2;
 }
 
 .weather-info {
@@ -68,20 +93,6 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
+  filter: hue-rotate(90deg); /* make the weather icon green */
 }
 
-.weather-text {
-  display: inline-block;
-  text-align: left;
-}
-
-.home-title,
-p {
-  color: #333;
-}
-
-
-.home-title,
-p {
-  color: #0f0;
-}

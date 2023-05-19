@@ -4,7 +4,7 @@ import MatrixRain from './MatrixRain';
 import './HomePage.css';
 
 function HomePage() {
-  const [quote, setQuote] = useState('');
+  const [quote, setQuote] = useState({});
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
@@ -29,16 +29,15 @@ function HomePage() {
 
   return (
     <div className="home-container">
-     <MatrixRain />
       <div className="home-box">
         <h1 className="home-title">Alexis Wu</h1>
-        <p className="home-intro">
+        <p className="typewriter">
           Welcome to my portfolio website! I am a student at Olin College of
           Engineering and I am passionate about coding, design, and creating
           innovative solutions to real-world problems.
         </p>
       </div>
-      {quote && (
+      {quote.content && (
         <div className="quote-container">
           <p className="quote-text">{quote.content}</p>
           <p className="quote-text">- {quote.author}</p>
@@ -46,7 +45,7 @@ function HomePage() {
       )}
       {weather && weather.main && (
         <div className="weather-container">
-          <h3>{weather.name}</h3>
+          <h3 className='weather-text'>{weather.name}</h3>
           <div className="weather-info">
             <img
               className="weather-icon"
@@ -60,8 +59,10 @@ function HomePage() {
           </div>
         </div>
       )}
+      <MatrixRain />
     </div>
   );
+
 }
 
 export default HomePage;

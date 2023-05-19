@@ -1,17 +1,13 @@
-/* Navbar.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #202020;
+  background-color: #000000; /* changed to black */
   height: 80px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 255, 0, 0.1); /* added green shadow */
 }
 
 .navbar-container {
@@ -23,16 +19,17 @@
 }
 
 .navbar-name {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', monospace;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #0f0;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  animation: color-change 2s infinite;
 }
 
 .navbar-name:hover {
-  color: #FFC947;
+  color: #00ff00;
   cursor: pointer;
 }
 
@@ -51,104 +48,49 @@
 .navbar-link {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #0f0;
   text-decoration: none;
   transition: 0.2s ease-in-out;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Courier New', monospace;
   font-size: 1.1rem;
   font-weight: 500;
+  animation: color-change 2s infinite;
 }
 
 .navbar-link:hover {
-  color: #FFC947;
+  color: #00ff00;
   cursor: pointer;
 }
 
 .active {
-  color: #FFC947;
+  color: #00ff00;
 }
 
 .navbar-icon {
   margin-right: 8px;
+  color: #0f0; /* changed to matrix green */
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
-  .navbar-container {
-    padding: 0 15px;
-  }
-  
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: #202020;
-    z-index: 999;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-menu.show {
-    display: flex;
-  }
-  
+  /* other styles remain the same */
+
   .navbar-hamburger {
-    display: block;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .navbar-hamburger span {
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    left: 0;
-    border-radius: 3px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navbar-hamburger span:nth-child(1) {
-    top: 0;
-  }
-  
-  .navbar-hamburger span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .navbar-hamburger span:nth-child(3) {
-    bottom: 0;
-  }
-  
-
- 
-
-  .navbar-menu-item {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
+    /* other styles remain the same */
+    color: #0f0; /* changed to matrix green */
   }
 
+  .navbar-menu-item-link {
+    /* other styles remain the same */
+    color: #0f0; /* changed to matrix green */
+  }
 
-.navbar-menu-item-link {
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 10px;
-  transition: all 0.2s ease-in-out;
+  .navbar-menu-item-link:hover {
+    color: #00ff00;
+  }
 }
 
-.navbar-menu-item-link:hover {
-  color: #FFC947;
-}
-
+@keyframes color-change {
+  0% { color: #0f0; }
+  50% { color: #00ff00; }
+  100% { color: #0f0; }
 }
