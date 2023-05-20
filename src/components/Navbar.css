@@ -55,23 +55,34 @@
   font-family: 'Courier New', monospace;
   font-size: 1.1rem;
   font-weight: 500;
+  transition: 0.2s ease-in-out;
+
   /* animation: color-change 5s infinite; */
 }
 
-.navbar-link:hover {
-  color: #00ff00;
-  cursor: pointer;
+
+
+.navbar-link:hover .navbar-link-item,
+.navbar-link:active .navbar-link-item {
+  color: #ffffff; /* White on hover and active */
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.active {
-  color: #00ff00;
+
+
+.navbar-link-item {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-icon {
   margin-right: 8px;
-  color: #0f0; /* changed to matrix green */
+}
+
+.navbar-link:hover .navbar-icon,
+.navbar-link:active .navbar-icon {
+  color: #ffffff; /* White on hover and active */
 }
 
 @media (max-width: 768px) {

@@ -12,7 +12,9 @@ function NavbarItem({ to, children }) {
   return (
     <li className="navbar-item">
       <Link to={to} className={`navbar-link ${match ? 'active' : ''}`}>
-        {children}
+        <div className="navbar-link-content">
+          {children}
+        </div>
       </Link>
     </li>
   );
@@ -27,20 +29,28 @@ function Navbar() {
         </Link>
         <ul className="navbar-menu">
           <NavbarItem to="/">
-            <HomeIcon className="navbar-icon" />
-            Home
+            <div className="navbar-link-item">
+              <HomeIcon className="navbar-icon" />
+              Home
+            </div>
           </NavbarItem>
           <NavbarItem to="/about">
-            <InfoIcon className="navbar-icon" />
-            CV
+            <div className="navbar-link-item">
+              <InfoIcon className="navbar-icon" />
+              CV
+            </div>
           </NavbarItem>
           <NavbarItem to="/projects">
-            <FolderIcon className="navbar-icon" />
-            Projects
+            <div className="navbar-link-item">
+              <FolderIcon className="navbar-icon" />
+              Projects
+            </div>
           </NavbarItem>
           <NavbarItem to="/contact">
-            <MailIcon className="navbar-icon" />
-            Contact
+            <div className="navbar-link-item">
+              <MailIcon className="navbar-icon" />
+              Contact
+            </div>
           </NavbarItem>
         </ul>
       </div>

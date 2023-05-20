@@ -1,287 +1,132 @@
+/* Base styling for HTML */
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Courier New', monospace;
+}
+
 body {
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
-    margin: 0;
-    color: #333;
-    background-color: #f5f5f5;
-  }
-  
-  
-  header {
-    background-color: #212121;
-    color: #fff;
-    padding: 30px;
-    text-align: left;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 350px;
-    overflow-y: auto;
-  }
+  color: #98FB98;
+  line-height: 1.6;
+  background-color: #000;
+  padding: 0 10%;
+}
 
-  /* header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  } */
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact-info li {
-    margin: 5px 0;
-  }
-  
-  .contact-info i {
-    margin-right: 5px;
-  }
-  
-  .contact-info a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  h2 {
-    margin-bottom: 5px;
-  }
-  
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  
+h1, h2, h3, p {
+  margin: 0 0 15px 0;
+}
 
-  
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #f6a625;
-  }
-  
-  header .headline {
-    margin-top: 5px;
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-  
-  header h2 {
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #f6a625;
-    padding-bottom: 5px;
-  }
-  
-  header ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-  
-  header li {
-    margin-bottom: 5px;
-  }
-  
-  header .contact {
-    margin-top: 5px;
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-  
-  header .contact a {
-    color: #f6a625;
-    text-decoration: none;
-  }
-  
-  header .contact a:hover {
-    text-decoration: underline;
-  }
-  
-  .skills {
-    margin-top: 50px;
-  }
-  
-  .skills h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #f6a625;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .skills ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-  }
-  
-  .skills ul li {
-    margin-bottom: 5px;
-  }
-  
-  .skills h3:first-of-type {
-    margin-top: 0;
-  }
-  
-  .skills h3:not(:first-of-type) {
-    margin-top: 20px;
-  }
-  
-  main {
-    margin-left: 450px;
-    padding: 30px;
-  }
-  
-  main h2 {
-    border-bottom: 2px solid #212121;
-    padding-bottom: 5px;
-    font-size: 1.8rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-top: 30px;
-    color: #212121;
-  }
-  
+h1, h2, h3 {
+  color: #98FB98;
+}
 
-  
-  .entry {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .left {
-    flex: 4;
-  }
-  
-  .right {
-    flex: 1;
-    text-align: right;
-    font-style: italic;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #212121;
-  }
-  
-  .left h3 {
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #f6a625;
-  }  
-  .right p {
-    margin-top: 5px;
-    color: #212121;
-  }
-  
-  .label {
-    font-weight: bold;
-    color: #f6a625;
-  }
-  
-  .job-location-dates {
-    float: right;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #212121;
-  }
-  
-  .company-name {
-    font-weight: bold;
-    color: #212121;
-  }
-  
-  @media screen and (max-width: 768px) {
-    header {
-      width: 100%;
-      position: static;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    main {
-      margin-left: 0;
-    }
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    margin: 0 auto;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .contact-info li {
-    margin: 5px 0;
-  }
-  
-  .contact-info i {
-    margin-right: 5px;
-  }
-  
-  .contact-info a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  h2 {
-    margin-bottom: 5px;
-  }
-  
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .skills p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .personal-statement {
-    font-style: italic;
-    margin: 30px 0;
-  }
-  
-  /* Adjust content box width for left entries */
-  .left-entry {
-    width: 60%;
-  }
-  
-  
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #98FB98;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #f8f8ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.personal-statement {
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #f8f8ff;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.skills h2 {
+  font-size: 1.6rem;
+  grid-column: span 2;
+}
+
+.skills p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Main */
+
+main {
+  margin-bottom: 40px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.entry h3 {
+  grid-column: span 2;
+}
+
+.entry p {
+  margin: 0;
+}
+
+.entry ul {
+  margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #98FB98;
+  color: #000;
+}
