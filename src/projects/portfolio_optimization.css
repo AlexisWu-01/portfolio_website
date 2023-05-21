@@ -1,0 +1,54 @@
+.portfolio-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top:2%;
+  position: sticky;
+
+}
+
+.portfolio-toc {
+  flex: 1;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding-right: 2rem;
+}
+
+.portfolio-toc h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.portfolio-toc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-toc li {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-toc button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  text-align: left;
+}
+
+.portfolio-toc button:hover {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: inherit
+}
+
+.portfolio-content {
+  flex: 3;
+  color:#ffffff;
+}
+

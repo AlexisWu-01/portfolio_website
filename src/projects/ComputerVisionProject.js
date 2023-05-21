@@ -1,5 +1,3 @@
-// ComputerVisionProject.js
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { marked } from 'marked';
@@ -11,7 +9,7 @@ const renderer = new Renderer();
 
 renderer.image = (href, title, text) => {
   const src = href.replace(/^http:\/\//i, 'https://');
-  return `<img src="${src}" alt="${text}"${title ? ` title="${title}"` : ''} class="project-image" />`;
+  return `<img src="${src}" alt="${text}"${title ? ` title="${title}"` : ''} class="portfolio-image" />`;
 };
 
 marked.setOptions({
@@ -35,18 +33,14 @@ function extractHeadings(content) {
   return headings;
 }
 
-
 function handleTocClick(e, headingId) {
   e.preventDefault();
   console.log('Heading ID:', headingId);
   const target = document.getElementById(headingId);
-  // console.log('Target Element:', target);
   if (target) {
     target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 }
-
-
 
 function updateHeadingIds(content, toc) {
   return toc.reduce(
@@ -83,23 +77,21 @@ function ComputerVisionProject() {
   }, [readmeUrl]);
 
   return (
-    <div className="project-details">
-      <h2>{title}</h2>
-      <div className="project-container">
-        <div className="table-of-contents">
-          <h3>Table of Contents</h3>
-          <ul>
-            {toc.map((heading) => (
-              <li key={heading.id} style={{ marginLeft: `${(heading.level - 1) * 16}px` }}>
-                <a href={`#${heading.id}`} onClick={(e) => handleTocClick(e, heading.id)} className="toc-link">
-                  {heading.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="project-readme" dangerouslySetInnerHTML={{ __html: updateHeadingIds(readme, toc) }} />
+    <div className="portfolio-details">
+      <div className="portfolio-toc">
+        <h2>{title}</h2>
+        <h3>Table of Contents</h3>
+        <ul>
+          {toc.map((heading) => (
+            <li key={heading.id}>
+              <button onClick={(e) => handleTocClick(e, heading.id)} style={{ paddingLeft: `${(heading.level - 1) * 1.5}rem` }}>
+                {heading.title}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
+      <div className="portfolio-content" dangerouslySetInnerHTML={{ __html: updateHeadingIds(readme, toc) }} />
     </div>
   );
 }

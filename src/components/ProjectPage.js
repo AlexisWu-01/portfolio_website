@@ -1,6 +1,8 @@
 import React from 'react';
 import './ProjectPage.css';
 import { Link } from 'react-router-dom';
+import portfolioIMG from '../projects/portfolio_img/efficient_frontier.png';
+
 function ProjectListItem({ title, description, imageUrl, projectUrl, id }) {
   return (
     <div className="project-list-item">
@@ -32,6 +34,15 @@ function ProjectPage() {
       projectUrl: `https://artBot.projects.alexiswu.tech`,
       id: 'art-bot',
     },
+
+    {
+      title: 'Portfolio Optimization with Stock Price Prediction',
+      description: 'This project focuses on utlizing monte-carlo processing for investment profile optimization in stock market with stock price prediction using LSTM nueral network. The goal is to find the optimal portfolio allocation that maximizes the return and minimizes the risk. The project is divided into two parts: stock price prediction and portfolio optimization. The stock price prediction part uses machine learning models to predict the future stock price. The portfolio optimization part uses monte-carlo processing to find the optimal portfolio allocation.',
+      imageUrl:portfolioIMG, // Replace this with the URL of your project image
+      projectUrl: '/projects/portfolio-optimization',
+      id: 'portfolio-optimization',
+    },
+    
 
     {
       title: 'More to Come',

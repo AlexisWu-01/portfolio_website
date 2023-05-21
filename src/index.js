@@ -10,6 +10,8 @@ import HomePage from './components/HomePage';
 import ProjectPage from './components/ProjectPage';
 import Navbar from './components/Navbar';
 import ComputerVisionProject  from './projects/ComputerVisionProject';
+import PortfolioOptimization from './projects/PortfolioOptimization';
+
 import { inject }  from '@vercel/analytics'
 
 inject();
@@ -24,6 +26,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/projects/computer-vision/:titleParam/:readmeUrlParam" element={<ComputerVisionProject />} />
+        <Route path="/projects/portfolio-optimization" element={<PortfolioOptimization />} /> 
 
       </Routes>
     </Router>
