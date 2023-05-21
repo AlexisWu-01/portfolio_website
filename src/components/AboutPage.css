@@ -20,17 +20,22 @@
   align-self: flex-end;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #ff00cc;
-  color: #fff;
+  background-color: #006400; /* Dark Green */
+  color: #98FB98; /* Pale Green */
   text-decoration: none;
   font-size: 25px;
-  border: none;
+  width: 100%; /* set the button to fill the width of its parent */
+  border: 2px solid #98FB98; /* Pale Green Border */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px #006400; /* Shadow for 3D effect */
 }
 
 .download-button:hover {
-  background-color: #ff33ff;
-  font-weight: bolder;
-  font-size: 30px;
+  background-color: #00FF00; /* Pale Green */
+  color: #000; /* Black */
+  transform: translateY(-2px); /* Small upward motion on hover */
+  box-shadow: 0 2px #006400; /* Adjusting shadow for 3D effect */
+  font-weight:bolder;
+  font-size:1.5rem;
 }
