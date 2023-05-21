@@ -28,20 +28,21 @@
           </li>
           <li>
             <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/xinyi-alexis-wu/" target="_blank">www.linkedin.com/in/xinyi-alexis-wu</a>
+            <a href="https://www.linkedin.com/in/xinyi-alexis-wu/" target="_blank">xinyi-alexis-wu</a>
           </li>
     
       </ul>
 
+ 
+        <div class="skills">
+          <h2>Technical Skills</h2>
+          <p>Python, Machine Learning (PyTorch, TensorFlow), React, MATLAB, Swift, ROS2, Flask, web-design(HTML, CSS, JavaScript), Computer Vision (openCV), OCaml</p>
+          <h2>Other Skills</h2>
+          <p>Microsoft Office, Adobe Photoshop, Figma, Adobe Illustrator, Fusion 360, Final Cut Pro X</p>
+        </div>
         <blockquote class="personal-statement">
           "Passionate and dedicated engineering student with experience in machine learning, software development, and robotics. Adept at collaborating on multidisciplinary teams and contributing to innovative projects. Looking to apply my skills in a dynamic and challenging environment."
         </blockquote>
-        <div class="skills">
-          <h2>Technical Skills</h2>
-          <p>Python, Machine Learning (PyTorch, TensorFlow), MATLAB, Swift, ROS2, Full Stack (MySQL, Python Flask, HTML, CSS, JavaScript), Computer Vision, OCaml</p>
-          <h2>Other Skills</h2>
-          <p>Microsoft Office, Adobe Photoshop, Adobe Illustrator, Fusion 360, Final Cut Pro X</p>
-        </div>
       </header>
       
       
@@ -53,7 +54,9 @@
           <div class="entry">
             <div class="left">
               <h3>Olin College of Engineering</h3>
-              <p>Bachelor of Science, Engineering: Computing</p>
+              <p class = "detail">Bachelor of Science, Engineering: Computing</p>
+              <p class = "detail">Recipient of 4 year Olin scholarship</p>
+
               <p><span class="label">Relevant Courses:</span> Software Design, Data Structure and Algorithm, Robotics with Ros, Principles of Engineering, Database with Web Interfaces, Advanced Algorithms, Computer Architecture, Probabilistic Design Optimization, Cryptocurrency and Blockchain Technology, Quantitative Engineering Analysis</p>
             </div>
             <div class="right">
@@ -67,7 +70,7 @@
           <div class="entry">
             <div class="left">
               <h3>Beat Detection Model, Tencent</h3>
-              <p>Machine Learning Intern</p>
+              <p class = "detail">Machine Learning Intern</p>
               <ul>
                 <li>Created beat detection algorithm for a mini game played by over 10 million people on a platform with 1.5 billions users</li>
                 <li>Conducted market research on musical games, collaborated with marketing team for 20% increase in user engagement</li>
@@ -83,9 +86,9 @@
           <div class="entry">
             <div class="left">
               <h3>Fraud Detection Model for E-Commerce, Chinasoft Intl.</h3>
-              <p>Machine Learning Intern</p>
+              <p class = "detail">Machine Learning Intern</p>
               <ul>
-                <li>•Built payment fraud detection model for e-commerce platform with over 1 million transactions database </li>
+                <li>Built payment fraud detection model for e-commerce platform with over 1 million transactions database </li>
                 <li>Implemented data preprocessing and feature engineering with sklearn and pandas</li>
                 <li>Developed random forest and unsupervised autoencoder neural networks that achieved 90% accuracy and 70% precision</li>
                 <li>Visualized data and model results for business department and improved payment fraud prevention by 43% monthly</li>
@@ -99,7 +102,7 @@
           <div class="entry">
             <div class="left">
               <h3>DJI Co. Ltd. Software Engineering Intern</h3>
-              <p>Software Development Intern</p>
+              <p class = "detail">Software Development Intern</p>
               <ul>
                 <li>Developed land robot with a remote control that grabs and builds blocks which was the prototype of RoboMaster S1</li>
                 <li>Implemented PID-controlled movement, electromagnetically controlled valve, and DBUS remote control on STM32</li>
@@ -108,7 +111,7 @@
               </ul>
             </div>
             <div class="right">
-              <p>Shenzhen, China</p>
+              <p>Remote</p>
               <p>June 2018 - August 2018</p>
             </div>
           </div>
@@ -117,11 +120,13 @@
           <h2>Project Experience</h2>
           <div class="entry">
             <div class="left">
-              <h3>iOS App Development for Visual Impaired Community</h3>
+              <h3>iOS App Development for Visual Impaired Community </h3>
               <ul>
-                <li>Conducted multiple user codesigns with blind and visual impaired people to help their lives with AR technology</li>
-                <li>Redesign the Clew app to help indoor navigation with improved coordinate calculation and additional features    </li>           
-                <li>Coordinate with hardware design team to incorporate controller with voiceover to improve the overall UX</li>
+                <li>Developed a precise indoor navigation iOS app utilizing AR technology, currently available for testing on <a href="https://testflight.apple.com/join/0nRMzsnY">testflight</a>.</li>
+                <li>Participated in multiple user co-design sessions with the blind and visually impaired community to better understand their needs.</li>           
+                <li>Addressed ARKit phone-body offset alignment issues and enhanced the feedback mechanism for improved user interaction.</li>
+                <li>Implemented an input selection feature in route-recording using SwiftUI and synchronized real-time data to Firebase.</li>
+                <li>Refined the path planning algorithm to compute shortest paths by smartly connecting different anchor points.</li>
               </ul>
             </div>
             <div class="right">
@@ -130,9 +135,24 @@
           </div>
           <div class="entry">
             <div class="left">
+              <h3>Data Analysis and Development for Air Justice, <a href = "www.airpartners.org">Air Partners</a></h3>
+              <ul>
+                <li>Developed a suite of data tools for community organization ACE to support their air quality related legalization movements.</li>
+                <li>Analyzed and processed QuantAQ sensor data to generate comprehensive pollutant reports relating to time, days, and wind conditions for 17 sites in Roxbury.</li>
+                <li>Significantly improved existing data pipeline by reconstructing the code structure, inducing multi-thread processing, automating the authentication process and reducing package dependency.</li>
+                <li>Worked closely with grassroots organizations to understand their specific needs, thus finetuning our data tools and turning data into actionable insights.</li>
+              </ul>
+            </div>
+            <div class="right">
+              <p>Jan 2023 - Now</p>
+            </div>
+          </div>
+
+          <div class="entry">
+            <div class="left">
               <h3>Robot Car with Vision, Class Project</h3>
               <ul>
-                <li>Deployed real-time interaction using ros2 platform on a raspberry pi controlled robot vacuum cleaner with an arm</li>
+                <li>Deployed real-time interaction using ros2 platform on a raspberry pi controlled iRobot vacuum cleaner with an arm</li>
                 <li>Trained a neural network with hand gesture recognition by transfer learning in TensorFlow</li>
                 <li>Applied color-based image segmentation on a raspberry pi based camera</li>
               </ul>
